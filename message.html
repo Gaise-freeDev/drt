@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DRT | Message recu</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="././plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-white-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="./starter.html" class="brand-link">
+                <img src="dist/img/03f94227f026a9ea867308a4a68effe6.png" alt="DRT Logo" class="brand-image img-circle elevation-3 dashboard-logo" style="opacity: .8">
+                <span class="brand-text title-header">Television</span>
+            </a>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <hr>
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Nom d'utilisateur</a>
+                    </div>
+                </div>
+                <hr>
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link active-bg">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Concours
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active-bg">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Ajouter</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>vote</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Historique
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Appels</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>SMS</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Resultats de votes
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-arrow-circle-right"></i>
+                                <p>
+                                    Parametres
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-8">
+                            <h1 class="m-0">Message recu cours...</h1>
+                        </div>
+                        <div class="col-sm-4">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#">Tableau</a></li>
+                                <li class="breadcrumb-item active">Message recu</li>
+                            </ol>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Boîte de réception</h3>
+
+                                    <div class="card-tools">
+                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                      <i class="fas fa-minus"></i>
+                                    </button>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <ul class="nav nav-pills flex-column">
+                                        <li class="nav-item active">
+                                            <a href="#" class="nav-link">
+                                                <i class="fas fa-inbox"></i> Message recu
+                                                <span class="badge bg-tele float-right">12</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="far fa-trash-alt"></i> Corbeille
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-9">
+                            <div class="card card-primary card-outline">
+                                <div class="card-header">
+                                    <h3 class="card-title">Boîte de réception</h3>
+
+                                    <div class="card-tools">
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control" placeholder="Search Mail">
+                                            <div class="input-group-append">
+                                                <div class="btn btn-primary">
+                                                    <i class="fas fa-search"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.card-tools -->
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body p-0">
+                                    <div class="table-responsive mailbox-messages">
+                                        <table class="table table-hover table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="icheck-primary">
+                                                            <input type="checkbox" value="" id="check1">
+                                                            <label for="check1"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="mailbox-name"><a href="read-mail.html"><span class="badge bg-tele">055005000</span></a></td>
+                                                    <td class="mailbox-subject"><b>Je vote pour 44...</b></td>
+                                                    <td class="mailbox-attachment">27-12-2020</td>
+                                                    <td class="mailbox-date">15:46</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- /.table -->
+                                    </div>
+                                    <!-- /.mail-box-messages -->
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer p-0">
+                                    <div class="mailbox-controls">
+                                        <!-- Check all button -->
+                                        <button type="button" class="btn btn-default btn-sm checkbox-toggle">
+                                      <i class="far fa-square"></i>
+                                    </button>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default btn-sm">
+                                        <i class="far fa-trash-alt"></i>
+                                      </button>
+                                            <button type="button" class="btn btn-default btn-sm">
+                                        <i class="fas fa-reply"></i>
+                                      </button>
+                                            <button type="button" class="btn btn-default btn-sm">
+                                        <i class="fas fa-share"></i>
+                                      </button>
+                                        </div>
+                                        <!-- /.btn-group -->
+                                        <button type="button" class="btn btn-default btn-sm">
+                                      <i class="fas fa-sync-alt"></i>
+                                    </button>
+                                        <div class="float-right">
+                                            1-50/200
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default btn-sm">
+                                          <i class="fas fa-chevron-left"></i>
+                                        </button>
+                                                <button type="button" class="btn btn-default btn-sm">
+                                          <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                            </div>
+                                            <!-- /.btn-group -->
+                                        </div>
+                                        <!-- /.float-right -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+            <div class="p-3">
+                <h5>Title</h5>
+                <p>Sidebar content</p>
+            </div>
+        </aside>
+        <!-- /.control-sidebar -->
+
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <!-- Default to the left -->
+            <div class="text-center">
+                <strong>Copyright &copy; 2020 <a href="https://adminlte.io">DRTv Television</a>.</strong> Tous les droits sont reserve.
+            </div>
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- REQUIRED SCRIPTS -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+</body>
+
+</html>

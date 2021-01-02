@@ -1,309 +1,155 @@
 <!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DRT | Tableau de bord</title>
+    <title>DRT Back Office</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="././plugins/fontawesome-free/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/adminlte.min.css">
-    <link rel="stylesheet" href="dist/css/adminlte.css">
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="../../dist/css/adminlte.css">
 </head>
 
-<body class="hold-transition sidebar-mini">
-    <div class="wrapper">
-        <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-            <!-- Left navbar links -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-                </li>
-            </ul>
-            <!-- Right navbar links -->
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-                        <i class="fas fa-expand-arrows-alt"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <!-- /.navbar -->
-        <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
-            <!-- Brand Logo -->
-            <a href="starter.html" class="brand-link">
-                <img src="dist/img/03f94227f026a9ea867308a4a68effe6.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">Television</span>
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="login-logo">
+            <a href="../../index2.html">
+                <img src="../../dist/img/03f94227f026a9ea867308a4a68effe6.png" alt="">
             </a>
-
-            <!-- Sidebar -->
-            <div class="sidebar">
-                <!-- Sidebar user (optional) -->
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-                    </div>
-                    <div class="info">
-                        <a href="profil.html" class="d-block">Nom de l'utilisateur</a>
-                    </div>
-                </div>
-
-                <!-- SidebarSearch Form -->
-                <div class="form-inline">
-                    <div class="input-group" data-widget="sidebar-search">
-                        <input class="form-control form-control-sidebar" type="search" placeholder="Effectuez une recherche rapide..." aria-label="Search">
-                        <div class="input-group-append">
-                            <button class="btn btn-sidebar">
-                      <i class="fas fa-search fa-fw"></i>
-                    </button>
-                        </div>
-                    </div>
-                    <div class="sidebar-search-results">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item">
-                                <div class="search-title">
-                                    <b class="text-light"></b>N<b class="text-light"></b>o<b class="text-light"></b> <b class="text-light"></b>e<b class="text-light"></b>l<b class="text-light"></b>e<b class="text-light"></b>m<b class="text-light"></b>e
-                                    <b class="text-light"></b>n<b class="text-light"></b>t<b class="text-light"></b> <b class="text-light"></b>f<b class="text-light"></b>o<b class="text-light"></b>u<b class="text-light"></b>n<b class="text-light"></b>d
-                                    <b class="text-light"></b>!
-                                    <b class="text-light"></b>
-                                </div>
-                                <div class="search-path">
-
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sidebar Menu -->
-                <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-                       with font-awesome or any other icon font library -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Gestion de la competition
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="AddComppetition.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Ajouter une competition</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Liste de competition</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="Addcategory.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Ajouter un categorie</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="ListeCategorie.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Liste des categorie</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-tree"></i>
-                                <p>
-                                    Historiques
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="HistoriqueAppels.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Appels</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="historiqueMessage.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>SMS</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>
-                                    Gestionnaire d'utilisateur
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="addUser.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Creer un utilisateur</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="UserList.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Listes des utilisateurs</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="voteRealtime.html" class="nav-link">
-                                <i class="nav-icon far fa-circle text-primary"></i>
-                                <p class="text">Vote en cours</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon far fa-setting"></i>
-                                <p class="text">Parametres</p>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- /.sidebar-menu -->
-            </div>
-            <!-- /.sidebar -->
-        </aside>
-        <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <div class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-12">
-                            <h1 class="m-0">Tableau de bord</h1>
-                        </div>
-                        <!-- <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Starter Page</li>
-                            </ol>
-                        </div> -->
-                        <!-- /.col -->
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-6">
-                            <!-- small box -->
-                            <div class="small-box bg-info">
-                                <div class="inner">
-                                    <h3>150</h3>
-
-                                    <p>Messages</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="ion ion-bag"></i>
-                                </div>
-                                <a href="message.html" class="small-box-footer">Plus d'information <i class="fas fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
-                        <!-- ./col -->
-                        <div class="col-lg-3 col-6">
-                            <!-- small box -->
-                            <div class="small-box bg-success">
-                                <div class="inner">
-                                    <h3>53</h3>
-
-                                    <p>Appels entre</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="ion ion-stats-bars"></i>
-                                </div>
-                                <a href="HistoriqueAppels.html" class="small-box-footer">Plus d'information <i class="fas fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
-                        <!-- ./col -->
-                        <div class="col-lg-3 col-6">
-                            <!-- small box -->
-                            <div class="small-box bg-warning">
-                                <div class="inner">
-                                    <h3>44</h3>
-
-                                    <p>Concours en cours</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="ion ion-person-add"></i>
-                                </div>
-                                <a href="voteRealtime.html" class="small-box-footer">Plus d'information <i class="fas fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
-                        <!-- ./col -->
-                        <div class="col-lg-3 col-6">
-                            <!-- small box -->
-                            <div class="small-box bg-danger">
-                                <div class="inner">
-                                    <h3>65</h3>
-
-                                    <p>Archivage</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="ion ion-pie-graph"></i>
-                                </div>
-                                <a href="#" class="small-box-footer">Plus d'information <i class="fas fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
-                        <!-- ./col -->
-                    </div>
-                </div>
-                <!-- /.container-fluid -->
-            </div>
-            <!-- /.content-header -->
         </div>
-        <!-- /.content-wrapper -->
-
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
-            <div class="p-3">
-                <h5>Title</h5>
-                <p>Sidebar content</p>
+        <!-- /.login-logo -->
+        <div class="card shadow">
+            <div class="card-body login-card-body">
+                <div class="text-center">
+                    <!-- start person image -->
+                    <div class="mx-auto">
+                        <?xml version="1.0" encoding="iso-8859-1"?>
+                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg class="login-person shadow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.003 512.003" style="enable-background:new 0 0 512.003 512.003;" xml:space="preserve">
+<polygon style="fill:#E6AF78;" points="335.446,361.939 335.446,300.15 176.558,300.15 176.558,361.939 256.002,432.556 "/>
+<path style="fill:#EFF2FA;" d="M458.286,390.843l-109.229-25.701c-1.65-0.388-3.167-1.047-4.587-1.846l-88.469,51.607L170.982,360.8
+	c-2.201,2.072-4.933,3.612-8.036,4.343L53.717,390.844c-15.95,3.753-27.222,17.985-27.222,34.37v69.134
+	c0,9.751,7.904,17.654,17.654,17.654h423.702c9.751,0,17.654-7.904,17.654-17.654v-69.134
+	C485.507,408.828,474.235,394.595,458.286,390.843z"/>
+<path style="fill:#D29B6E;" d="M176.558,300.15v65.193c100.078,36.057,158.888-54.185,158.888-54.185v-11.009H176.558V300.15z"/>
+<path style="fill:#F0C087;" d="M141.249,97.127l7.692,169.228c0.718,15.809,8.47,30.47,21.13,39.965l36.498,27.374
+	c9.168,6.875,20.318,10.593,31.778,10.593h35.309c11.46,0,22.61-3.717,31.778-10.593l36.498-27.374
+	c12.66-9.496,20.412-24.155,21.13-39.965l7.692-169.228C370.753,97.127,141.249,97.127,141.249,97.127z"/>
+<path style="fill:#E6AF78;" d="M229.521,132.435c35.309,0,88.271-8.827,100.833-35.309H141.249l7.692,169.228
+	c0.718,15.809,8.47,30.469,21.131,39.965l36.498,27.374c9.168,6.875,20.318,10.593,31.778,10.593h17.654
+	c-17.654,0-52.963-35.309-52.963-79.444c0-21.586,0-79.444,0-105.926C203.039,150.089,211.866,132.435,229.521,132.435z"/>
+<g>
+	<path style="fill:#E4EAF6;" d="M91.3,454.714l-57.199-51.382c-4.793,6.069-7.603,13.706-7.603,21.882v69.134
+		c0,9.751,7.904,17.654,17.654,17.654h61.79v-24.454C105.941,475.021,100.618,463.084,91.3,454.714z"/>
+	<path style="fill:#E4EAF6;" d="M420.705,454.714l57.199-51.382c4.793,6.069,7.603,13.706,7.603,21.882v69.134
+		c0,9.751-7.904,17.654-17.654,17.654h-61.79v-24.454C406.063,475.021,411.386,463.084,420.705,454.714z"/>
+</g>
+<polygon style="fill:#5B5D6E;" points="278.07,512.001 233.934,512.001 239.451,432.556 272.553,432.556 "/>
+<path style="fill:#515262;" d="M278.07,414.902h-44.136v16.613c0,5.451,4.418,9.869,9.869,9.869H268.2
+	c5.451,0,9.869-4.418,9.869-9.869v-16.613H278.07z"/>
+<g>
+	<path style="fill:#E4EAF6;" d="M175.319,342.287l80.684,72.615c0,0-22.596,11.407-50.48,34.398
+		c-5.752,4.742-14.453,2.821-17.538-3.966l-37.907-83.394l11.992-17.987C165.054,339.473,171.318,338.687,175.319,342.287z"/>
+	<path style="fill:#E4EAF6;" d="M336.686,342.287l-80.684,72.615c0,0,22.596,11.407,50.48,34.398
+		c5.752,4.742,14.453,2.821,17.538-3.966l37.907-83.394l-11.992-17.987C346.95,339.473,340.686,338.687,336.686,342.287z"/>
+</g>
+<path style="fill:#785550;" d="M309.516,38.647l8.275,58.48c37.775,7.555,43.219,66.837,44.003,83.769
+	c0.142,3.073,1.123,6.04,2.79,8.625l14.413,22.358c0,0-4.933-36.964,17.654-61.79C396.652,150.089,404.408,3.338,309.516,38.647z"/>
+<path style="fill:#F0C087;" d="M387.851,208.115l-9.965,39.861c-1.181,4.725-5.425,8.038-10.296,8.038l0,0
+	c-5.353,0-9.867-3.985-10.531-9.296l-5.097-40.77c-1.364-10.913,7.144-20.551,18.142-20.551h0.008
+	C382.008,185.398,390.736,196.575,387.851,208.115z"/>
+<path style="fill:#694B4B;" d="M149.709,22.831l13.056,8.919c-59.031,43.584-47.998,118.339-47.998,118.339
+	c17.654,17.654,17.654,61.79,17.654,61.79l17.654-17.654c0,0-6.813-50.998,26.481-70.617c30.895-18.206,57.928-8.827,85.513-8.827
+	c73.927,0,94.616-27.861,91.03-61.79c-1.856-17.556-28.698-54.126-97.098-52.963C228.397,0.497,176.558,8.855,149.709,22.831z"/>
+<path style="fill:#5A4146;" d="M144.559,107.057c0,0-9.379-36.964,18.206-75.306c-59.031,43.584-47.998,118.339-47.998,118.339
+	c17.654,17.654,17.654,61.79,17.654,61.79l17.654-17.654c0,0-6.813-50.998,26.481-70.617c30.895-18.206,57.928-8.827,85.513-8.827
+	c12.023,0,22.5-0.805,31.832-2.185C236.969,114.505,203.408,71.38,144.559,107.057z"/>
+<path style="fill:#E6AF78;" d="M124.153,208.115l9.965,39.861c1.181,4.725,5.425,8.038,10.296,8.038l0,0
+	c5.353,0,9.867-3.985,10.531-9.296l5.097-40.77c1.364-10.913-7.144-20.551-18.142-20.551h-0.008
+	C129.996,185.398,121.268,196.575,124.153,208.115z"/>
+<path style="fill:#E4EAF6;" d="M370.755,494.346h-61.79c-4.875,0-8.827,3.952-8.827,8.827v8.827h79.444v-8.827
+	C379.582,498.299,375.629,494.346,370.755,494.346z"/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                        <!-- end person icon -->
+                    </div>
+                    <!-- <img class="profile-user-img img-fluid img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture"> -->
+                </div>
+                <p class="login-box-msg mt-2">connectes-vous</p>
+                <hr class="mt-2">
+                <form action="starter.html" method="post">
+                    <div class="input-group mb-3 mt-2">
+                        <input type="email" class="form-control" placeholder="Nom d'utilisateur">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="Mot de passe">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <hr>
+                <div class="social-auth-links text-center mb-3">
+                    <a href="./dashbord.html" type="submit" class="btn btn-lg btn-block btn-primary">
+                        Connexion 
+                    </a>
+                </div>
+                <!-- /.social-auth-links -->
             </div>
-        </aside>
-        <!-- /.control-sidebar -->
-
-        <!-- Main Footer -->
-        <footer class="main-footer">
-            <!-- Default to the left -->
-            <div class="text-center">
-                <strong>Copyright &copy; 2020 <a href="https://adminlte.io">DRTv Television</a>.</strong> Tous les droits sont reserve.
-            </div>
-        </footer>
+            <!-- /.login-card-body -->
+        </div>
     </div>
-    <!-- ./wrapper -->
-
-    <!-- REQUIRED SCRIPTS -->
+    <!-- /.login-box -->
 
     <!-- jQuery -->
-    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
-    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="dist/js/adminlte.min.js"></script>
+    <script src="../../dist/js/adminlte.min.js"></script>
 </body>
 
 </html>

@@ -150,6 +150,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <!-- /.col -->
                     </div>
                     <div class="row">
+
+
+                        <!-- Debut de la partie ajoutee -->
+
+
                         <div class="col-md-3">
                             <div class="card">
                                 <div class="card-header">
@@ -162,17 +167,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     </div>
                                 </div>
                                 <div class="card-body p-0">
-                                    <ul class="nav nav-pills flex-column">
-                                        <li class="nav-item active">
-                                            <a href="#" class="nav-link">
-                                                <i class="fas fa-inbox"></i> Message recu
+                                    <ul class="nav nav-pills flex-column" id="accordionExample">
+                                        <li class="nav-item active accordion" id="headingOne">
+                                            <a href="#" class="nav-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <i class="fas fa-inbox"></i> Challenge #1
                                                 <span class="badge bg-tele float-right">12</span>
                                             </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class="far fa-trash-alt"></i> Corbeille
-                                            </a>
+                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item list-group-item-action"><b>De : 055005000 </b></li>
+                                                    <li class="list-group-item list-group-item-action"><b>De : 055005000 </b></li>
+                                                    <li class="list-group-item list-group-item-action"><b>De : 055005000 </b></li>
+                                                    <li class="list-group-item list-group-item-action"><b>De : 055005000 </b></li>
+                                                    <li class="list-group-item list-group-item-action"><b>De : 055005000 </b></li>
+                                                </ul>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -184,83 +193,31 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <div class="col-md-9">
                             <div class="card card-primary card-outline">
                                 <div class="card-header">
-                                    <h3 class="card-title">Boîte de réception</h3>
-
-                                    <div class="card-tools">
-                                        <div class="input-group input-group-sm">
-                                            <input type="text" class="form-control" placeholder="Search Mail">
-                                            <div class="input-group-append">
-                                                <div class="btn btn-primary">
-                                                    <i class="fas fa-search"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /.card-tools -->
+                                    <h3 class="card-title"><b>Lecture du message</b> </h3>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body p-0">
-                                    <div class="table-responsive mailbox-messages">
-                                        <table class="table table-hover table-striped">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="icheck-primary">
-                                                            <input type="checkbox" value="" id="check1">
-                                                            <label for="check1"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td class="mailbox-name"><a href="read-mail.html"><span class="badge bg-tele">055005000</span></a></td>
-                                                    <td class="mailbox-subject"><b>Je vote pour 44...</b></td>
-                                                    <td class="mailbox-attachment">27-12-2020</td>
-                                                    <td class="mailbox-date">15:46</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <!-- /.table -->
+                                    <div class="mailbox-read-info">
+                                        <h5>De : 055005000
+                                            <span class="mailbox-read-time float-right">27-12-2020 15:46</span></h5>
                                     </div>
-                                    <!-- /.mail-box-messages -->
-                                </div>
-                                <!-- /.card-body -->
-                                <div class="card-footer p-0">
-                                    <div class="mailbox-controls">
-                                        <!-- Check all button -->
-                                        <button type="button" class="btn btn-default btn-sm checkbox-toggle">
-                                      <i class="far fa-square"></i>
-                                    </button>
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-default btn-sm">
-                                        <i class="far fa-trash-alt"></i>
-                                      </button>
-                                            <button type="button" class="btn btn-default btn-sm">
-                                        <i class="fas fa-reply"></i>
-                                      </button>
-                                            <button type="button" class="btn btn-default btn-sm">
-                                        <i class="fas fa-share"></i>
-                                      </button>
-                                        </div>
-                                        <!-- /.btn-group -->
-                                        <button type="button" class="btn btn-default btn-sm">
-                                      <i class="fas fa-sync-alt"></i>
-                                    </button>
-                                        <div class="float-right">
-                                            1-50/200
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-default btn-sm">
-                                          <i class="fas fa-chevron-left"></i>
-                                        </button>
-                                                <button type="button" class="btn btn-default btn-sm">
-                                          <i class="fas fa-chevron-right"></i>
-                                        </button>
-                                            </div>
-                                            <!-- /.btn-group -->
-                                        </div>
-                                        <!-- /.float-right -->
+                                    <!-- /.mailbox-controls -->
+                                    <div class="mailbox-read-message">
+                                        <p>Je vote pour le <b>44</b></p>
                                     </div>
+                                    <!-- /.mailbox-read-message -->
                                 </div>
                             </div>
                             <!-- /.card -->
                         </div>
+
+
+
+                        <!-- fin de la partie ajoutee -->
+
+
+
+
                     </div>
                 </div>
                 <!-- /.container-fluid -->

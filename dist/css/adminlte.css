@@ -3632,6 +3632,7 @@ input[type="button"].btn-block {
     color: #16181b;
     text-decoration: none;
     background-color: #f8f9fa;
+    color: var(--purple)
 }
 
 .dropdown-item.active,

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DRT | Tableau de bord</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="././plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                <!-- ajout du bouton deconnexion -->
+                <li class="">
+                    <a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fas fa-user-alt"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right bg-tele">
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i> Mon profil
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-sign-out-alt"></i> Se deconnecter
+                        </a>
+                    </div>
+                </li>
+                <!-- fin du bouton -->
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="dashboard.html" class="brand-link">
+                <img src="dist/img/03f94227f026a9ea867308a4a68effe6.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">Television</span>
+            </a>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="profil.html" class="d-block">Nom de l'utilisateur</a>
+                    </div>
+                </div>
+
+                <!-- SidebarSearch Form -->
+                <div class="form-inline">
+                    <div class="input-group" data-widget="sidebar-search">
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Effectuez une recherche rapide..." aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-sidebar">
+                      <i class="fas fa-search fa-fw"></i>
+                    </button>
+                        </div>
+                    </div>
+                    <div class="sidebar-search-results">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">
+                                <div class="search-title">
+                                    <b class="text-light"></b>N<b class="text-light"></b>o<b class="text-light"></b> <b class="text-light"></b>e<b class="text-light"></b>l<b class="text-light"></b>e<b class="text-light"></b>m<b class="text-light"></b>e
+                                    <b class="text-light"></b>n<b class="text-light"></b>t<b class="text-light"></b> <b class="text-light"></b>f<b class="text-light"></b>o<b class="text-light"></b>u<b class="text-light"></b>n<b class="text-light"></b>d
+                                    <b class="text-light"></b>!
+                                    <b class="text-light"></b>
+                                </div>
+                                <div class="search-path">
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                       with font-awesome or any other icon font library -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Gestion de la competition
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="AddComppetition.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Ajouter une competition</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Liste de competition</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="Addcategory.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Ajouter un categorie</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="ListeCategorie.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Liste des categorie</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-tree"></i>
+                                <p>
+                                    Historiques
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="HistoriqueAppels.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Appels</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="historiqueMessage.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>SMS</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>
+                                    Gestionnaire d'utilisateur
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="addUser.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Creer un utilisateur</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="UserList.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Listes des utilisateurs</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="voteRealtime.html" class="nav-link">
+                                <i class="nav-icon far fa-circle text-primary"></i>
+                                <p class="text">Vote en cours</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon far fa-setting"></i>
+                                <p class="text">Parametres</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-8">
+                            <h1 class="m-0">Tableau de bord</h1>
+                        </div>
+                        <div class="col-sm-4">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active">Starter Page</li>
+                            </ol>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <div class="row">
+                        <!-- debut de la partie -->
+                        <section class="content">
+                            <!-- Default box -->
+
+
+                            <!-- Ajout de la section -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Detail de l'historique</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 col-md-12 col-lg-12 order-2 order-md-1">
+                                            <div class="col-12 col-md-12 col-lg-12 order-1 order-md-2">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="dist/img/03f94227f026a9ea867308a4a68effe6.png" class="float-left" alt="drt">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <small class="float-right">
+                                                        <h4>Nom de la competition</h4>
+                                                    </small>
+                                                    </div>
+                                                </div>
+
+                                                <p class="text-muted mt-3">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terr.</p>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-4">
+                                                        <div class="info-box bg-light shadow">
+                                                            <div class="info-box-content">
+                                                                <span class="info-box-text text-center text-muted">Date de debut</span>
+                                                                <span class="info-box-number text-center text-muted mb-0">15-11-2020</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4">
+                                                        <div class="info-box bg-light shadow">
+                                                            <div class="info-box-content">
+                                                                <span class="info-box-text text-center text-muted">Date de fin</span>
+                                                                <span class="info-box-number text-center text-muted mb-0">30-11-2020</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4">
+                                                        <div class="info-box bg-light shadow">
+                                                            <div class="info-box-content">
+                                                                <span class="info-box-text text-center text-muted">Duree de la conpetition</span>
+                                                                <span class="info-box-number text-center text-muted mb-0">15 jours</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                            </div>
+
+                                            <div class="card-tabs">
+                                                <div class="card-header p-0 pt-1 border-bottom-0">
+                                                    <ul class="nav nav-tabs" id="custom-tabs-three-tab" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" id="custom-tabs-three-home-tab" data-toggle="pill" href="#custom-tabs-three-home" role="tab" aria-controls="custom-tabs-three-home" aria-selected="true">Details des appels</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="custom-tabs-three-profile-tab" data-toggle="pill" href="#custom-tabs-three-profile" role="tab" aria-controls="custom-tabs-three-profile" aria-selected="false">Details des SMS</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="tab-content" id="custom-tabs-three-tabContent">
+                                                        <div class="tab-pane fade show active" id="custom-tabs-three-home" role="tabpanel" aria-labelledby="custom-tabs-three-home-tab">
+                                                            <div class="">
+                                                                <p class="lead mb-0">Listes des appels</p>
+                                                            </div>
+                                                            <div class="invoice p-3 mb-3">
+                                                                <div class="row">
+                                                                    <!-- /.card-header -->
+                                                                    <div class=" card card-body table-responsive p-0" style="height: 300px;">
+                                                                        <table class="table table-head-fixed text-nowrap">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>User</th>
+                                                                                    <th>Date</th>
+                                                                                    <th>Status</th>
+                                                                                    <th>Reason</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>John Doe</td>
+                                                                                    <td>11-7-2014</td>
+                                                                                    <td><span class="tag tag-success">Approved</span></td>
+                                                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Alexander Pierce</td>
+                                                                                    <td>11-7-2014</td>
+                                                                                    <td><span class="tag tag-warning">Pending</span></td>
+                                                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Bob Doe</td>
+                                                                                    <td>11-7-2014</td>
+                                                                                    <td><span class="tag tag-primary">Approved</span></td>
+                                                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Mike Doe</td>
+                                                                                    <td>11-7-2014</td>
+                                                                                    <td><span class="tag tag-danger">Denied</span></td>
+                                                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Jim Doe</td>
+                                                                                    <td>11-7-2014</td>
+                                                                                    <td><span class="tag tag-success">Approved</span></td>
+                                                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Victoria Doe</td>
+                                                                                    <td>11-7-2014</td>
+                                                                                    <td><span class="tag tag-warning">Pending</span></td>
+                                                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Michael Doe</td>
+                                                                                    <td>11-7-2014</td>
+                                                                                    <td><span class="tag tag-primary">Approved</span></td>
+                                                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Rocky Doe</td>
+                                                                                    <td>11-7-2014</td>
+                                                                                    <td><span class="tag tag-danger">Denied</span></td>
+                                                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <!-- /.card-body -->
+                                                                    <!-- /.col -->
+                                                                </div>
+                                                                <!-- /.row -->
+
+                                                                <div class="row mt-3">
+                                                                    <!-- accepted payments column -->
+                                                                    <div class="col-6 card shadow-sm p-3">
+                                                                        <p class="lead">Information sur le total </p>
+
+                                                                        <p class="text-muted well well-sm shadow-none" style="margin-top: 10px;">
+                                                                            Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem plugg dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
+                                                                        </p>
+                                                                    </div>
+                                                                    <!-- /.col -->
+                                                                    <div class="col-6 card shadow-sm p-3">
+                                                                        <p class="lead">Total appels</p>
+
+                                                                        <div class="table-responsive">
+                                                                            <table class="table">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <th>Cout unitaire :</th>
+                                                                                        <td>300</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <th style="width:50%">Nombre total :</th>
+                                                                                        <td>10000</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <th>Gain total appel</th>
+                                                                                        <td>300.000 <b>XAF</b></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- /.col -->
+                                                                </div>
+                                                                <!-- /.row -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="custom-tabs-three-profile" role="tabpanel" aria-labelledby="custom-tabs-three-profile-tab">
+                                                            <div class="">
+                                                                <p class="lead mb-0">Listes des SMS</p>
+                                                            </div>
+                                                            <div class="invoice p-3 mb-3">
+                                                                <!-- Table row -->
+                                                                <div class="row">
+                                                                    <!-- /.card-header -->
+                                                                    <div class=" card card-body table-responsive p-0" style="height: 300px;">
+                                                                        <table class="table table-head-fixed text-nowrap">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>User</th>
+                                                                                    <th>Date</th>
+                                                                                    <th>Status</th>
+                                                                                    <th>Reason</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>John Doe</td>
+                                                                                    <td>11-7-2014</td>
+                                                                                    <td><span class="tag tag-success">Approved</span></td>
+                                                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Alexander Pierce</td>
+                                                                                    <td>11-7-2014</td>
+                                                                                    <td><span class="tag tag-warning">Pending</span></td>
+                                                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Bob Doe</td>
+                                                                                    <td>11-7-2014</td>
+                                                                                    <td><span class="tag tag-primary">Approved</span></td>
+                                                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Mike Doe</td>
+                                                                                    <td>11-7-2014</td>
+                                                                                    <td><span class="tag tag-danger">Denied</span></td>
+                                                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Jim Doe</td>
+                                                                                    <td>11-7-2014</td>
+                                                                                    <td><span class="tag tag-success">Approved</span></td>
+                                                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Victoria Doe</td>
+                                                                                    <td>11-7-2014</td>
+                                                                                    <td><span class="tag tag-warning">Pending</span></td>
+                                                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Michael Doe</td>
+                                                                                    <td>11-7-2014</td>
+                                                                                    <td><span class="tag tag-primary">Approved</span></td>
+                                                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Rocky Doe</td>
+                                                                                    <td>11-7-2014</td>
+                                                                                    <td><span class="tag tag-danger">Denied</span></td>
+                                                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <!-- /.card-body -->
+                                                                    <!-- /.col -->
+                                                                </div>
+                                                                <!-- /.row -->
+
+                                                                <div class="row mt-3">
+                                                                    <!-- accepted payments column -->
+                                                                    <div class="col-6 card shadow-sm p-3">
+                                                                        <p class="lead">Information sur le total </p>
+
+                                                                        <p class="text-muted well well-sm shadow-none" style="margin-top: 10px;">
+                                                                            Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem plugg dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
+                                                                        </p>
+                                                                    </div>
+                                                                    <!-- /.col -->
+                                                                    <div class="col-6 card shadow-sm p-3">
+                                                                        <p class="lead">Total SMS</p>
+
+                                                                        <div class="table-responsive">
+                                                                            <table class="table">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <th>Cout unitaire :</th>
+                                                                                        <td>100</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <th style="width:50%">Nombre total :</th>
+                                                                                        <td>2500</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <th>Gain total SMS</th>
+                                                                                        <td>25.000 <b>XAF</b></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- /.col -->
+                                                                </div>
+                                                                <!-- /.row -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="custom-tabs-three-messages" role="tabpanel" aria-labelledby="custom-tabs-three-messages-tab">
+                                                            Morbi turpis dolor, vulputate vitae felis non, tincidunt congue mauris. Phasellus volutpat augue id mi placerat mollis. Vivamus faucibus eu massa eget condimentum. Fusce nec hendrerit sem, ac tristique nulla. Integer vestibulum orci odio. Cras nec augue
+                                                            ipsum. Suspendisse ut velit condimentum, mattis urna a, malesuada nunc. Curabitur eleifend facilisis velit finibus tristique. Nam vulputate, eros non luctus efficitur, ipsum odio volutpat massa,
+                                                            sit amet sollicitudin est libero sed ipsum. Nulla lacinia, ex vitae gravida fermentum, lectus ipsum gravida arcu, id fermentum metus arcu vel metus. Curabitur eget sem eu risus tincidunt eleifend
+                                                            ac ornare magna.
+                                                        </div>
+                                                        <div class="tab-pane fade" id="custom-tabs-three-settings" role="tabpanel" aria-labelledby="custom-tabs-three-settings-tab">
+                                                            Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus turpis ac, ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate. Morbi euismod molestie tristique. Vestibulum consectetur dolor a
+                                                            vestibulum pharetra. Donec interdum placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat diam. Nunc et felis ut nisl commodo dignissim. In hac habitasse platea
+                                                            dictumst. Praesent imperdiet accumsan ex sit amet facilisis.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /.card -->
+                                            </div>
+
+                                            <hr>
+                                            <div class="row">
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+
+                            <!-- fin de la section -->
+
+
+
+
+                            <!-- /.card -->
+                        </section>
+                        <!-- add de la section ote -->
+
+
+
+                        <!-- fin de la partie -->
+
+
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+            <div class="p-3">
+                <h5>Title</h5>
+                <p>Sidebar content</p>
+            </div>
+        </aside>
+        <!-- /.control-sidebar -->
+
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <!-- Default to the left -->
+            <div class="text-center">
+                <strong>Copyright &copy; 2020 <a href="https://adminlte.io">DRTv Television</a>.</strong> Tous les droits sont reserve.
+            </div>
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- REQUIRED SCRIPTS -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+    <!-- demo -->
+    <script src="dist/js/demo.js"></script>
+</body>
+
+</html>
